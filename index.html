@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Simple button with animated background">
+	<title>Button Idea</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			min-height: 100vh;
+			margin: 0;
+			display: grid;
+			place-items: center;
+			font-family: system-ui, sans-serif;
+			background:
+				linear-gradient(rgba(20, 16, 35, 0.38), rgba(20, 16, 35, 0.55)),
+				url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85")
+					center / cover no-repeat;
+		}
+
+		button {
+			display: block;
+            width: 200px;
+            height: 100px;
+			place-items: center;
+			padding: 1rem;
+			border: 2px solid transparent;
+			border-radius: 0.6rem;
+			background-color: #8b79bd;
+			color: #fff;
+            mix-blend-mode: multiply;
+			font: inherit;
+			font-size: 1.1rem;
+			cursor: pointer;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+			transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+            isolation: isolate;
+            will-change: transform;
+		}
+
+        button:hover {
+			background: #7c6ea1;
+			border-color: #efd7f3;
+			box-shadow: 0 0 12px #e879f9, 0 0 30px rgba(232, 121, 249, 0.75);
+            mix-blend-mode: difference;
+			transform: translateY(-2px);
+		}
+
+		button:focus-visible {
+			outline: 3px solid #cac5d9;
+			outline-offset: 3px;
+		}
+
+        .text {
+            position: absolute;
+            margin-left: -60px;
+            font-size: 2.5rem;
+            z-index: 1;
+        }
+
+		.button-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 25px);
+            transform: translateY(-5px) scale(1.3);
+            pointer-events: none;
+            overflow: hidden;
+            inset: 0;
+			gap: 35px;
+		}
+
+		.button-grid div {
+			width: 20px;
+			height: 20px;
+			border-radius: 1px;
+            /* background: linear-gradient(45deg, #f0abfc, #e879f9); */
+            /* background-blend-mode: hard-light; */
+            background: white;
+            /* mix-blend-mode: screen; */
+            /* background-blend-mode: destination-out; */
+            animation-name: descend;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+		}
+
+        .button-grid div:nth-child(1) {
+            animation-name: descend;
+            animation-delay: 0s;
+        }
+        .button-grid div:nth-child(2) {
+            animation-name: descend;
+            animation-delay: 0.5s;
+        }
+        .button-grid div:nth-child(3) {
+            animation-name:  descend;
+            animation-delay: 1s;
+        }
+        .button-grid div:nth-child(4) {
+            animation-name:  descend;
+            animation-delay: 1.5s;
+        }
+        .button-grid div:nth-child(5) {
+            animation-name:  descend;
+            animation-delay: 2s;
+        }
+        .button-grid div:nth-child(6) {
+            animation-name:  descend;
+            animation-delay: 2.5s;      
+        }
+
+		
+
+        @keyframes descend {
+            0% {
+                transform: rotate(45deg) translateY(-200px); opacity:0.25 ;
+             
+            }
+            50% {
+                transform: rotate(0deg) translateY(0px); opacity:1;
+              
+            }
+            100% {
+                transform: rotate(315deg) translateY(100px) scale(0.5); opacity:0.25 ;
+                
+            }
+        }
+
+
+        
+	</style>
+</head>
+<body>
+	<main>
+		<button type="button" aria-label="Kliknij mnie">
+            <span class="text">Button</span>
+			<div class="button-grid" aria-hidden="true">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</button>
+	</main>
+</body>
+</html>
