@@ -2,6 +2,9 @@ import type { ButtonHTMLAttributes } from "react";
 
 type DreamButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
+const leafPath =
+	"M 511 3 L 494 55 L 494 62 L 490 66 L 480 86 L 475 91 L 468 93 L 463 106 L 448 118 L 434 118 L 432 138 L 427 157 L 415 178 L 403 182 L 394 182 L 383 176 L 375 175 L 355 164 L 337 148 L 351 186 L 359 219 L 359 225 L 355 227 L 365 247 L 374 273 L 374 281 L 370 285 L 379 307 L 382 324 L 381 342 L 377 357 L 371 367 L 359 379 L 353 382 L 340 382 L 324 376 L 314 369 L 284 337 L 282 338 L 278 336 L 263 321 L 255 306 L 250 304 L 235 286 L 214 252 L 212 275 L 205 287 L 196 296 L 182 297 L 165 292 L 146 282 L 140 284 L 128 283 L 107 274 L 95 265 L 90 268 L 72 260 L 68 260 L 49 248 L 39 244 L 22 232 L 4 224 L 30 255 L 46 282 L 46 287 L 56 309 L 56 320 L 65 337 L 62 350 L 55 356 L 48 358 L 67 378 L 74 391 L 83 401 L 86 407 L 86 414 L 94 430 L 93 441 L 86 452 L 73 459 L 68 466 L 58 472 L 22 487 L 66 500 L 76 505 L 80 510 L 84 511 L 89 518 L 98 520 L 129 538 L 134 539 L 139 544 L 137 553 L 155 561 L 189 581 L 206 597 L 213 612 L 211 621 L 205 632 L 184 653 L 169 662 L 141 674 L 139 680 L 123 690 L 114 698 L 96 705 L 97 709 L 95 712 L 87 717 L 80 725 L 69 729 L 62 735 L 55 736 L 34 746 L 13 758 L 77 761 L 100 767 L 105 770 L 104 773 L 144 779 L 163 788 L 170 796 L 171 804 L 165 814 L 203 803 L 228 803 L 240 798 L 257 799 L 277 807 L 287 820 L 284 831 L 285 837 L 283 842 L 273 854 L 276 856 L 276 861 L 272 869 L 271 876 L 268 880 L 268 885 L 257 902 L 254 910 L 235 937 L 288 906 L 300 902 L 307 903 L 329 893 L 338 894 L 358 884 L 365 883 L 371 885 L 377 893 L 379 893 L 391 884 L 417 858 L 428 852 L 436 855 L 473 804 L 491 785 L 499 779 L 503 794 L 505 908 L 502 988 L 498 1019 L 504 1021 L 521 1021 L 527 1019 L 527 1014 L 520 981 L 517 949 L 516 808 L 517 795 L 523 779 L 529 783 L 550 805 L 578 845 L 587 855 L 591 852 L 595 852 L 603 856 L 633 885 L 644 893 L 646 893 L 651 886 L 658 883 L 663 883 L 685 894 L 689 892 L 695 893 L 716 903 L 724 902 L 735 906 L 787 937 L 768 909 L 755 885 L 755 880 L 747 860 L 747 856 L 750 854 L 740 839 L 741 830 L 737 820 L 746 807 L 771 798 L 784 798 L 793 802 L 823 803 L 857 814 L 851 802 L 853 795 L 858 789 L 880 778 L 918 772 L 917 770 L 920 767 L 951 759 L 963 760 L 973 758 L 1008 757 L 999 751 L 968 736 L 960 734 L 954 729 L 942 724 L 936 717 L 925 709 L 926 705 L 906 696 L 892 684 L 882 679 L 881 674 L 862 664 L 854 662 L 841 654 L 818 632 L 812 621 L 810 612 L 818 597 L 833 582 L 868 561 L 887 552 L 884 545 L 887 542 L 918 526 L 922 522 L 934 518 L 934 515 L 953 502 L 964 497 L 969 497 L 1001 487 L 966 473 L 954 465 L 950 459 L 940 454 L 933 446 L 930 439 L 930 432 L 938 416 L 938 410 L 942 401 L 951 391 L 962 374 L 977 358 L 968 355 L 964 351 L 962 346 L 962 338 L 971 320 L 971 311 L 984 279 L 996 257 L 1020 224 L 1007 230 L 987 245 L 981 247 L 971 255 L 958 262 L 953 262 L 941 268 L 934 267 L 922 275 L 898 285 L 889 285 L 886 281 L 859 294 L 843 298 L 835 298 L 828 295 L 820 286 L 813 269 L 812 252 L 797 278 L 778 303 L 770 308 L 764 320 L 746 337 L 740 338 L 715 366 L 703 375 L 685 382 L 670 382 L 664 379 L 653 368 L 647 359 L 642 343 L 641 323 L 645 304 L 652 289 L 652 284 L 649 280 L 650 271 L 659 246 L 668 229 L 665 225 L 665 218 L 670 203 L 673 186 L 687 148 L 666 166 L 653 173 L 641 176 L 633 181 L 619 182 L 609 179 L 597 162 L 591 143 L 588 120 L 585 118 L 571 117 L 561 107 L 554 93 L 547 91 L 543 87 L 529 61 Z";
+
 const styles = `
 	.dream-button {
 		position: relative;
@@ -57,19 +60,25 @@ const styles = `
 		pointer-events: none;
 	}
 
-	.dream-button__grid span {
+	.dream-button__grid > div {
 		width: 20px;
 		height: 20px;
 		border-radius: 1px;
-		background: white;
+		background: transparent;
 		animation: dream-button-descend 5s ease-in-out infinite;
 	}
 
-	.dream-button__grid span:nth-child(2) { animation-delay: 0.5s; }
-	.dream-button__grid span:nth-child(3) { animation-delay: 1s; }
-	.dream-button__grid span:nth-child(4) { animation-delay: 1.5s; }
-	.dream-button__grid span:nth-child(5) { animation-delay: 2s; }
-	.dream-button__grid span:nth-child(6) { animation-delay: 2.5s; }
+	.dream-button__grid > div:nth-child(2) { animation-delay: 0.5s; }
+	.dream-button__grid > div:nth-child(3) { animation-delay: 1s; }
+	.dream-button__grid > div:nth-child(4) { animation-delay: 1.5s; }
+	.dream-button__grid > div:nth-child(5) { animation-delay: 2s; }
+	.dream-button__grid > div:nth-child(6) { animation-delay: 2.5s; }
+
+	.dream-button__grid svg {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
 
 	@keyframes dream-button-descend {
 		0% { transform: rotate(45deg) translateY(-200px); opacity: 0.25; }
@@ -79,7 +88,7 @@ const styles = `
 
 	@media (prefers-reduced-motion: reduce) {
 		.dream-button,
-		.dream-button__grid span {
+		.dream-button__grid > div {
 			transition: none;
 			animation: none;
 		}
@@ -105,11 +114,17 @@ export function DreamButton({
 				className={buttonClassName}
 			>
 				<span className="dream-button__label">{children}</span>
-				<span className="dream-button__grid" aria-hidden="true">
+				<div className="dream-button__grid" aria-hidden="true">
 					{Array.from({ length: 6 }, (_, index) => (
-						<span key={index} />
+						<div key={index}>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+								<g transform="rotate(180 512 512)">
+									<path d={leafPath} fill="#fff" />
+								</g>
+							</svg>
+						</div>
 					))}
-				</span>
+				</div>
 			</button>
 		</>
 	);
