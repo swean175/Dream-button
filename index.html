@@ -69,6 +69,10 @@
             pointer-events: none;
             overflow: hidden;
             inset: 0;
+			opacity: 0;
+			animation-name: apear;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
 			gap: 35px;
 		}
 
@@ -128,6 +132,18 @@
                 
             }
         }
+
+		@keyframes apear {
+			0% {
+				opacity: 0;
+			}
+			90% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
 
 
         

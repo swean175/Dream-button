@@ -57,6 +57,10 @@ const styles = `
 		grid-template-columns: repeat(3, 25px);
 		gap: 35px;
 		transform: translateY(-5px) scale(1.3);
+		opacity: 0;
+		animation-name: apear;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
 		pointer-events: none;
 	}
 
@@ -93,6 +97,17 @@ const styles = `
 			animation: none;
 		}
 	}
+			@keyframes apear {
+			0% {
+				opacity: 0;
+			}
+			90% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
 `;
 
 export function DreamButton({
